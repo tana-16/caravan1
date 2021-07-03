@@ -3,12 +3,35 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+a{
+  text-decoration: none;
 }
 
 header {
   width: 90%; /* 横幅90% */
   padding: 15px 0;
   margin: 0 auto;
+  text-align: center;
+}
+
+header .heading {
+  /* headerタグ内のheadingクラスにのみ反映される */
+  font-size: 32px;
+}
+
+.nav-list {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
 }
 
 .main-visual {
@@ -25,7 +48,7 @@ header {
 
 .main {
   width: 840px; /* 横幅840px */
-   /* background-color, heightの指定を解除 */
+  /* background-color, heightの指定を解除 */
   height: 1400px;
   display: flex; /* Flexboxの利用 */
   justify-content: center; /* 子要素の横並び・中央寄せ */
@@ -45,6 +68,13 @@ header {
 }
 
 footer {
-  width: 100%; /* 横幅いっぱい */
-  height: 120px; /* 高さ120px */
+  width: 100%;
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+  background-color: #848284;
+}
+
+.footer-text {
+  color: #fff;
 }
